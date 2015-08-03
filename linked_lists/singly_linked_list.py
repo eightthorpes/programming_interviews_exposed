@@ -10,10 +10,18 @@ def insertInFront(head, data):
   newElement.next = head
   return newElement
 
+def deleteElement(head, data):
+  element = find(head, data)
+  if element:
+    
+      
+
 def find(head, data):
   element = head
   while(element and element.data != data):
     element = element.next
+    if (element):
+        break
   return element
 
 head = ListElement("foo")
