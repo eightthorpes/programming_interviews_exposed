@@ -27,14 +27,22 @@ def find(head, data):
     element = element.next
   return element
 
-head = ListElement("foo")
-head = insertInFront(head, "bar")
-head = insertInFront(head, "baz")
+class Stack:
+  def __init__(self):
+    self.head = None
 
-print find(head, "baz").data
-print find(head, "bing")
+  def push(self, data):
+    element = ListElement(data);
+    element.next = self.head
+    self.head = element
 
-deleteElement(head, "baz")
+  def pop(self):
+    element = self.head
+    if (self.head):
+      self.head = self.head.next
+    return element
+
+
 
 
 
