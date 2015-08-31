@@ -42,7 +42,14 @@ class Stack:
       self.head = self.head.next
     return element
 
-
+s = Stack()
+s.push("foo")
+s.push("bar")
+s.push("baz")
+print s.pop().data
+print s.pop().data
+print s.pop().data
+print s.pop()
 
 
 
