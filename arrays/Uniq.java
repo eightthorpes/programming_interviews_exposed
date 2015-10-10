@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class Uniq {
 
-  public boolean is_uniq(String str) {
+  public boolean is_uniq(String str, String t) {
     if (str.length() < 2) {
       return true;
     }
@@ -18,7 +18,7 @@ public class Uniq {
 
   public static void main(String[] args) {
     Uniq u = new Uniq();
-    System.out.println(u.is_uniq(args[0]));
+    System.out.println(u.is_uniq(args[0], "foo"));
   }
 
 
