@@ -58,3 +58,4 @@ target/
 
 *.class
 *.swp
+.idea
